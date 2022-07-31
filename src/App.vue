@@ -1,29 +1,43 @@
 <template>
-  <the-header title="RememberMe"></the-header>
-  <the-resources></the-resources>
+  <learning-survey></learning-survey>
+  <user-experiences></user-experiences>
 </template>
 
 <script>
-import TheHeader from "./components/layouts/TheHeader.vue";
-import TheResources from "./components/learning-resources/TheResources.vue";
+import LearningSurvey from "./components/survey/LearningSurvey.vue";
+import UserExperiences from "./components/survey/UserExperiences.vue";
 
 export default {
   components: {
-    TheHeader,
-    TheResources,
+    LearningSurvey,
+    UserExperiences,
   },
+  // data() {
+  //   return {
+  //     savedSurveyResults: [],
+  //   };
+  // },
+  // methods: {
+  //   storeSurvey(surveyData) {
+  //     const surveyResult = {
+  //       name: surveyData.userName,
+  //       rating: surveyData.rating,
+  //       id: new Date().toISOString(),
+  //     };
+  //     this.savedSurveyResults.push(surveyResult);
+  //     console.log(surveyResult);
+  //   },
+  // },
 };
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
 }
 
 body {
