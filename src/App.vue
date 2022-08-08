@@ -1,33 +1,15 @@
 <template>
-  <learning-survey></learning-survey>
-  <user-experiences></user-experiences>
+  <the-header></the-header>
+  <router-view></router-view>
 </template>
 
 <script>
-import LearningSurvey from "./components/survey/LearningSurvey.vue";
-import UserExperiences from "./components/survey/UserExperiences.vue";
+import TheHeader from "./components/nav/TheHeader.vue";
 
 export default {
   components: {
-    LearningSurvey,
-    UserExperiences,
+    TheHeader,
   },
-  // data() {
-  //   return {
-  //     savedSurveyResults: [],
-  //   };
-  // },
-  // methods: {
-  //   storeSurvey(surveyData) {
-  //     const surveyResult = {
-  //       name: surveyData.userName,
-  //       rating: surveyData.rating,
-  //       id: new Date().toISOString(),
-  //     };
-  //     this.savedSurveyResults.push(surveyResult);
-  //     console.log(surveyResult);
-  //   },
-  // },
 };
 </script>
 
